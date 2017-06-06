@@ -12,12 +12,6 @@
         <p><label for="idNascimento">Data de Nascimento:</label>
             <input id="idNascimento" type="date" min="1900-01-01" name="txtNascimento" required/>
         </p>
-        <!--        <fieldset id="sexo">
-                    <legend>Sexo</legend>
-                    <input id="idSexoM" type="radio" name="txtSexo" value="M" checked/><label for="idSexoM">Masculino</label>
-                    <br/>
-                    <input id="idSexoF" type="radio" name="txtSexo" value="F"/><label for="idSexoF">Feminino</label>
-                </fieldset>-->
         <p><label for="idSexo">Sexo:</label>
             <input id="idSexo" type="text" name="txtSexo" size="20" maxlength="20" required/>
         </p>

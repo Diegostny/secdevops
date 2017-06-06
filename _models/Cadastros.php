@@ -87,7 +87,6 @@ class Cadastros extends Model {
             $query->execute();
             return TRUE;
         } catch (PDOException $ex) {
-//            throw $ex();
             return FALSE;
         } finally {
             $query->closeCursor();

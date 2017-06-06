@@ -10,19 +10,6 @@ $(document).ready(function() {
 
 });
 
-//$('#alertAviso').ready(function() {
-//    console.log("Entrou em alertAviso");
-//    var texto = $('#alertAviso').attr('aviso');
-//    if (texto !== "") {
-//        alert("Mensagem:\n" + texto);
-//    }
-//});
-
-//$('div', '#divFormItem').ready(function() {
-//    console.log("Entrou em divFormItem. Chamando loadData...");
-//    loadData();
-//});
-
 function emitirAviso() {
     var texto = $('#alertAviso').attr('aviso');
     if (texto !== "") {

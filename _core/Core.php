@@ -5,8 +5,8 @@ class Core {
     public function run() {
         $currentController = "";
         $currentAction = "";
-        $uri = filter_input(INPUT_SERVER, "REQUEST_URI", FILTER_SANITIZE_URL); // '/index.php/home/index/'
-        $request = explode("/", $uri); // ([0]=>'' [1]=>index.php [2]=>home [3]=>index)
+        $uri = filter_input(INPUT_SERVER, "REQUEST_URI", FILTER_SANITIZE_URL); 
+        $request = explode("/", $uri); 
         array_shift($request);
         if (strpos($request[0], "index") > -1) {
             array_shift($request);
@@ -26,11 +26,7 @@ class Core {
             $currentAction = "erro";
         }
         $params = (count($request) > 0) ? $request : array();
-//        echo "<br/>currenteController: " . $currentController;
-//        echo "<br/>currentAction: " . $currentAction;
-//        echo "<br/>params: ";
-//        print_r($params);
-//        exit();
+
         $start = new $currentController();
         call_user_func_array(array($start, $currentAction), $params);
     }

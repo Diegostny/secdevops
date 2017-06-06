@@ -10,12 +10,6 @@
         <hr>
         <h2>Imagem aleatória do banco</h2>
         Endereço da imagem:
-        <!-- Inserir código semelhante a este no input. XSS é bloqueado pelo navegador. No IE11 o filtro XSS pode ser desligado.
-        '><div style="background-color:#ffff00;height:150px"><marquee style="font-size:48pt">Texto inserido com marquee</marquee></div>
-        '><script>document.getElementById("imgdaweb").style.width="100px";</script>
-        '><script>document.getElementById("imgdaweb").style.display="none";</script>
-        '><script>var x=document.getElementsByTagName("p");x[0].style.color="red";x[0].innerHTML="Texto alterado pelo atacante - XSS"</script>
-        -->
         <form method="POST">
             <input type="text" name="origem" value='<?php echo (empty($strImagem)) ? "" : $strImagem; ?>'/>            
             <input type="submit" name="btnEnviar" value="Enviar"/>
