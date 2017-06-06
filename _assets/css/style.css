@@ -1,0 +1,198 @@
+@charset "UTF-8";
+body{
+    margin: 0px;
+    min-width: 800px;
+    background-color: lightgrey;
+    font-family: arial, sans-serif;
+}
+/* menu */
+header{
+    width: 100%;
+    height: 66px;
+    position: fixed;
+    top: -16px;
+}
+nav#menu{
+    background-color: #DE0000;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.7);
+    width: 80%;
+    min-width: 800px;
+    height: 66px;
+    margin: auto;
+    display: block;
+}
+div#menuusuario{
+    height: 66px;
+    line-height: 66px;
+    font-size: 12pt;
+    font-weight: bold;
+    float: right;
+}
+div#menuusuario a{
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: right;
+    color: #000000;
+}
+div#menuusuario a:hover{
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,0.7);
+}
+div#menubtn{
+    height: 66px;
+    float: left;
+}
+div#menubtn ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+div#menubtn li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+}
+div#menubtn li:hover{
+    background-color: rgba(64,0,0,0.6);
+}
+div#container{
+    width: 80%;
+    padding-top: 20px;
+    min-width: 800px;
+    min-height: 500px;
+    margin: 60px auto 10px auto;
+    background-color: #a7c7c7;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.7);
+}
+div#homeView{
+    min-height: 400px;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+div#erroView{
+    width: 50%;
+    min-height: 400px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+div.sobreView{
+    width: 70%;
+    min-height: 300px;
+    margin: auto;
+    text-align: center;
+}
+div#loginView{
+    width: 250px;
+    margin: auto;
+    padding: 2%;
+}
+div#loginView h2{
+    text-align: center;
+}
+div#loginView input{
+    width: 100%;
+    font-size: 12pt;
+}
+div#loginView input.inpradio{
+    width: 20px;
+}
+/* div alterar */
+div#alterarView{
+    min-height: 400px;
+    margin: auto;
+    text-align: center;
+}
+/* view cadastros */
+div#cadastrosView{
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+/*div#cadastrosView .inpAlterar{
+    background-color: #a7c7c7;
+    width: 98%;
+    font-size: 12pt;
+    border: 0px;
+}*/
+table.listaPacientes{
+    margin: 40px auto;
+    width: 60%;
+    border-spacing: 0;
+    border: 1px solid #000000;
+}
+table.listaPacientes caption{
+    background-color: #CECECE;
+    font-size: 16pt;
+    font-weight: bolder;
+    text-align: center;
+    border: 2px solid #000000;
+    border-bottom: 0px;
+}
+table.listaPacientes td{
+    border: 1px solid #000000;
+    padding: 2px;
+    text-align: left;
+}
+table.listaPacientes td.titulo{
+    background-color: #CECECE;
+    font-weight: bold;
+    text-align: center;
+}
+table.listaPacientes input.btnAlterar{
+    width: 50%;
+    height: 40px;
+    border: 2px solid black;
+}
+table.listaPacientes input.btnAlterar:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+textarea.txMensagem{
+    width: 98%;
+    height: 150px;
+    font-size: 10pt;
+}
+/* div incluir */
+div#incluirView h2{
+    text-align: center;
+}
+div#incluirView form{
+    width: 500px;
+    margin: auto;
+}
+input:hover, textarea:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+div#incluirView legend{
+    font-weight: bold;
+    font-size: 12pt;
+}
+div#incluirView fieldset{
+    border-color: #CECECE;
+    margin: 20px;
+}
+div#incluirView fieldset#sexo{
+    width: 150px;
+}
+div#incluirView fieldset#telefones{
+    width: 260px;
+}
+div#incluirView form input#btnEnviar {
+    margin-bottom: 20px;
+    width: 120px;
+    height: 30px;
+}
+footer{
+    width: 100%;
+    height: 75px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    text-align: center;
+}
